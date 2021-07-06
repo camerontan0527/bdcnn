@@ -15,3 +15,7 @@ An example of training our model would be using command line operation like foll
 python3 train.py --lr 0.01 --epoch 100 --model fcn
 ```
 Then a conventional FCN and its bi-directional variants would be trained for 100 epochs with a learning rate of 0.01.
+
+### About Dataset
+
+Due to privacy protocol, the dataset we used in our experiments would not be shared publicly. Instead, to show the format of the data for training, we add some dummy input and target under the directory [data](https://github.com/camerontan0527/bdcnn/tree/main/data). In the provided dummy dataset, {train, test, val}_data is the input for the model, where there are 11, 1 and 1 instances for training, testing and validating, respectively. The corresponding target (class label) for each instance is recorded in {train, test, val}_type files.
